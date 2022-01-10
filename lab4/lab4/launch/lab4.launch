@@ -1,0 +1,11 @@
+<launch>
+	<node name="stage" pkg="stage_ros" type="stageros"
+	      args="$(find lab4)/world/playground.world" />
+    	<node pkg="lab4" name="astar" type="astar.py" output="screen"/>
+	<param name="start_x" value="-8" />
+    	<param name="start_y" value="-2" />
+    	<param name="goal_x" value="4.5" />
+    	<param name="goal_y" value="9.0" />
+</launch>
+
+
